@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/index.css" />
   </head>
   <body>
+    <div id="overlay"></div>
     <nav class="navbar" role="navigation">
       <div class="navbar-brand">
         <h2
@@ -36,32 +37,39 @@
     </nav>
     <div>
       <h1 class="" style="text-align: center; margin: 5%; font-size: xxx-large">
-        Welcome $USERNAME
+        Welcome <span id="username"></span>
       </h1>
     </div>
-    <div class="columns has-text-centered">
+    <div
+      class="columns has-text-centered"
+      style="margin-left: 10%; margin-right: 10%"
+    >
       <div class="column">
         <div class="card">
-          <header class="card-header">
+          <header class="card-header has-text-centered">
             <p class="card-header-title" style="text-align: center">
               Encript a File
             </p>
           </header>
+          <div class="card-content">
+            <button class="button is-primary" id="file-choose">Choose</button>
+          </div>
         </div>
       </div>
 
       <div class="column">
-        <div class="card has-text-centered">
+        <div class="card">
           <header class="card-header has-text-centered">
-            <p
-              class="card-header-title has-text-centered"
-              style="text-align: center"
-            >
+            <p class="card-header-title" style="text-align: center">
               Encript a Folder
             </p>
           </header>
+          <div class="card-content">
+            <button class="button" id="folder-choose">Choose</button>
+          </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="/js/index.js"></script>
 </html>
