@@ -14,32 +14,15 @@
 * {
   font-family: sens;
 }
-/* :root {
-  color-scheme: light !important;
-}
-  .box,
-  .card,
-  .navbar,
-  .hero,
-  .section,
-  .navbar-item,
-  .card-header-title {
-    background-color: white !important;
-    color: black !important;
-  }
-} */
 @media (prefers-color-scheme: dark) {
   html,
   body {
     background-color: #ffffff !important;
     color: #313131 !important;
   }
-  /* For Chrome, Safari, Edge */
 ::-webkit-scrollbar {
   display: none;
 }
-
-/* For Firefox */
 html {
   scrollbar-width: none;
 }
