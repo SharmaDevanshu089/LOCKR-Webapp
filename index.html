@@ -11,7 +11,12 @@
   <body>
     <nav class="navbar" role="navigation">
       <div class="navbar-brand">
-        <h2 class="navbar-item" style="font-size: x-large">Lockr</h2>
+        <h2
+          class="navbar-item"
+          style="font-size: x-large; color: #313131 !important"
+        >
+          Lockr
+        </h2>
       </div>
 
       <div class="navbar-menu">
@@ -34,30 +39,29 @@
         Welcome $USERNAME
       </h1>
     </div>
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">Component</p>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-          iaculis mauris.
-          <a href="#">@bulmaio</a>. <a href="#">#css</a>
-          <a href="#">#responsive</a>
-          <br />
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+    <div class="columns has-text-centered">
+      <div class="column">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title" style="text-align: center">
+              Encript a File
+            </p>
+          </header>
         </div>
       </div>
-      <footer class="card-footer">
-        <a href="#" class="card-footer-item">Save</a>
-        <a href="#" class="card-footer-item">Edit</a>
-        <a href="#" class="card-footer-item">Delete</a>
-      </footer>
+
+      <div class="column">
+        <div class="card has-text-centered">
+          <header class="card-header has-text-centered">
+            <p
+              class="card-header-title has-text-centered"
+              style="text-align: center"
+            >
+              Encript a Folder
+            </p>
+          </header>
+        </div>
+      </div>
     </div>
   </body>
 </html>
