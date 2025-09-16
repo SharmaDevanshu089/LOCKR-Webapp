@@ -1,22 +1,36 @@
-.left-pad{
-    margin-right: 5%;
-}
-body {
-    font-family: "sens", sans-serif;
-}
-.navbar{
-    border: none;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
+@font-face {
+  font-family: "Roboto";
+  src: url("/asset/roboto.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
 }
 @font-face {
-    font-family: "Roboto";
-    src: url("/asset/roboto.ttf") format("truetype");
-    font-weight: bolder;
-    font-style: normal;
+  font-family: "sens";
+  src: url("/asset/sansation.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face {
-    font-family: "sens";
-    src: url("/asset/sansation.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+* {
+  font-family: sens;
+}
+:root {
+  color-scheme: light !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #ffffff !important;
+    color: #313131 !important;
+  }
+
+  .box,
+  .card,
+  .navbar,
+  .hero,
+  .section {
+    background-color: white !important;
+    color: black !important;
+  }
 }
